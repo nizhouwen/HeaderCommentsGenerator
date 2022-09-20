@@ -1,0 +1,43 @@
+<idea-plugin>
+  <id>HeaderCommentsGenerator-v1.0</id>
+  <name>HeaderCommentsGenerator</name>
+  <version>1.1</version>
+  <vendor email="zhouwen_ni@aliyun.com">https://github.com/nizhouwen</vendor>
+
+  <description><![CDATA[
+      Batch add notes
+      instructions：
+		1. Normal search and install plug-ins
+		2. Shortcut key 'ctrl alt u' to run
+		3. select your file or path
+		4. add the description you want to add
+		5. click button 'Generate!' and It will add the comments you wrote to the beginning of the files in the directory that have ended with '. Java'
+    ]]></description>
+
+  <change-notes><![CDATA[
+      v1.0
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products-->
+  <depends>com.intellij.modules.platform</depends>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action class="HeaderCommentsGenerator" id="HeaderCommentsGenerator" text="HeaderCommentsGenerator" description="HeaderCommentsGenerator v1.0">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut first-keystroke="ctrl alt u" keymap="$default" />
+    </action>
+  </actions>
+
+</idea-plugin>
