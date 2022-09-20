@@ -22,7 +22,7 @@ public class HeaderCommentsGenerator extends AnAction {
     }
 
     public static void handNotes() {
-        final JFrame frame = new JFrame("HeaderCommentsGenerator 1.0");
+        final JFrame frame = new JFrame("HeaderCommentsGenerator 1.2");
 
         JPanel contentPane = (JPanel) frame.getContentPane();
 
